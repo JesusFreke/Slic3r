@@ -700,6 +700,7 @@ PrintConfigDef::PrintConfigDef()
 
     def = this->add("infill_first", coBool);
     def->label = "Infill before perimeters";
+    def->category = "Infill";
     def->tooltip = "This option will switch the print order of perimeters and infill, making the latter first.";
     def->cli = "infill-first!";
     def->default_value = new ConfigOptionBool(false);
